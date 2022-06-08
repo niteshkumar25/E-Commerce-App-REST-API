@@ -1,0 +1,331 @@
+{
+	"info": {
+		"_postman_id": "d90adb2d-4b54-49b0-9946-5e9c135640f0",
+		"name": "E-commerce Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "20223174"
+	},
+	"item": [
+		{
+			"name": "Post",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"suresh123\",\r\n    \"email\":\"k213@gmail.com\",\r\n    \"password\":\"kumar\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/api/auth/register"
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"username\":\"admin\",\r\n    \"password\":\"kumar\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/api/auth/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "token",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOWJjMGQ3OGJlM2JmYjQ5OWY4ZGMyOSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE2NTQzNzQ2ODIsImV4cCI6MTY1NDYzMzg4Mn0.Xml0TAyaC2ka8aTTzFQQS9RtDE59EdWdeO0iFvZ4rJQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\":\"Ajmal\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/api/629bc0d78be3bfb499f8dc29"
+			},
+			"response": []
+		},
+		{
+			"name": "Admin",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOWM5NGU0NzZmMWY4YTdiZTI5YmJhZiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY1NDQyOTEwNSwiZXhwIjoxNjU0Njg4MzA1fQ.mjh1nWiFap11QDLUHSowueFA2LcuEPgfVf_RswtV4Jo",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:5000/api/find/629c94e476f1f8a7be29bbaf"
+			},
+			"response": []
+		},
+		{
+			"name": "Admin Delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "token",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOWM5NGU0NzZmMWY4YTdiZTI5YmJhZiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY1NDQyOTEwNSwiZXhwIjoxNjU0Njg4MzA1fQ.mjh1nWiFap11QDLUHSowueFA2LcuEPgfVf_RswtV4Jo",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": "http://localhost:5000/api/user/629a5eaf0b0c9f5fb541ed64"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all users",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOWM5NGU0NzZmMWY4YTdiZTI5YmJhZiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY1NDQyOTEwNSwiZXhwIjoxNjU0Njg4MzA1fQ.mjh1nWiFap11QDLUHSowueFA2LcuEPgfVf_RswtV4Jo",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:5000/api/find/629c94e476f1f8a7be29bbaf"
+			},
+			"response": []
+		},
+		{
+			"name": "user Stats",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOWM5NGU0NzZmMWY4YTdiZTI5YmJhZiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY1NDQyOTEwNSwiZXhwIjoxNjU0Njg4MzA1fQ.mjh1nWiFap11QDLUHSowueFA2LcuEPgfVf_RswtV4Jo",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:5000/api/find/629c94e476f1f8a7be29bbaf"
+			},
+			"response": []
+		},
+		{
+			"name": "Add Products",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOWM5NGU0NzZmMWY4YTdiZTI5YmJhZiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY1NDQyOTEwNSwiZXhwIjoxNjU0Njg4MzA1fQ.mjh1nWiFap11QDLUHSowueFA2LcuEPgfVf_RswtV4Jo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Smart Watch\",\r\n    \"desc\":\"Good Watch\",\r\n    \"img\":\"test\",\r\n    \"categories\":[\"Oppo\", \"Vivo\"],\r\n    \"size\":\"S\",\r\n    \"color\":\"Black\",\r\n    \"price\":4000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/api/product"
+			},
+			"response": []
+		},
+		{
+			"name": "Product Update BY Admin",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "token",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOWM5NGU0NzZmMWY4YTdiZTI5YmJhZiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY1NDQyOTEwNSwiZXhwIjoxNjU0Njg4MzA1fQ.mjh1nWiFap11QDLUHSowueFA2LcuEPgfVf_RswtV4Jo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Puma\",\r\n    \"categories\": [\"T-shirt\", \"Shoes\", \"Watches\"]\r\n\r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/api/product/629cbd606d6ce480effcbea4"
+			},
+			"response": []
+		},
+		{
+			"name": "Product Delete BY Admin Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "token",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOWM5NGU0NzZmMWY4YTdiZTI5YmJhZiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY1NDQyOTEwNSwiZXhwIjoxNjU0Njg4MzA1fQ.mjh1nWiFap11QDLUHSowueFA2LcuEPgfVf_RswtV4Jo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Pents\",\r\n    \"desc\":\"Very good product\",\r\n    \"img\":\"test\",\r\n    \"categories\":[\"Pents\", \"Shocks\"],\r\n    \"size\":\"S\",\r\n    \"color\":\"gray\",\r\n    \"price\":300\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/api/product/629cc10f22c63d8d0d8fb654"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOWM5NGU0NzZmMWY4YTdiZTI5YmJhZiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY1NDQyOTEwNSwiZXhwIjoxNjU0Njg4MzA1fQ.mjh1nWiFap11QDLUHSowueFA2LcuEPgfVf_RswtV4Jo",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Pents\",\r\n    \"desc\":\"Very good product\",\r\n    \"img\":\"test\",\r\n    \"categories\":[\"Pents\", \"Shocks\"],\r\n    \"size\":\"S\",\r\n    \"color\":\"gray\",\r\n    \"price\":300\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/api/product/find/629cbd606d6ce480effcbea4"
+			},
+			"response": []
+		},
+		{
+			"name": "All Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/product?categories=Pents",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"product"
+					],
+					"query": [
+						{
+							"key": "categories",
+							"value": "Pents"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:5000/api/cart"
+			},
+			"response": []
+		},
+		{
+			"name": "Admin get all cart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:5000/api/cart"
+			},
+			"response": []
+		},
+		{
+			"name": "Order",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOWM5NGU0NzZmMWY4YTdiZTI5YmJhZiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY1NDQyOTEwNSwiZXhwIjoxNjU0Njg4MzA1fQ.mjh1nWiFap11QDLUHSowueFA2LcuEPgfVf_RswtV4Jo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"629a5eaf0b0c9f5fb541ed64\",\r\n    \"products\":[\r\n        {\r\n            \"productId\":\"imdqdm\",\r\n            \"quantity\":2\r\n        },\r\n        {\r\n            \"productId\":\"imfsdkdm\",\r\n            \"quantity\":1\r\n        }\r\n    ],\r\n    \"amount\":100,\r\n    \"address\":\"USA\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/api/order"
+			},
+			"response": []
+		},
+		{
+			"name": "Income",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:5000/api/order/income"
+			},
+			"response": []
+		}
+	]
+}
