@@ -5,17 +5,17 @@ const mongoose = require('mongoose');
 const userSchema = new mongoose.Schema({
     username: {
         type:String,
-        require:true,
+        required:true,
         unique:true
     },
     email: {
         type:String,
-        require:true,
+        required:true,
         unique:true
     },
     password: {
         type:String,
-        require:true
+        required:true
     },
     isAdmin:{
         type:Boolean,
